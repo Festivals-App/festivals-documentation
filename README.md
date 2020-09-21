@@ -1,5 +1,5 @@
 <p align="center">
- <a href=" https://simonsapps.de/misc/festivals"><img src="https://raw.githubusercontent.com/Festivals-App/estivals-documentation/master/images/festivals_title.png" width="400"></a>
+ <a href=" https://simonsapps.de/misc/festivals"><img src="https://github.com/Festivals-App/festivals-documentation/blob/master/images/festivals_title.png" width="400"></a>
 </p>
 
 <hr />
