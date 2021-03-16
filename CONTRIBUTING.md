@@ -8,13 +8,13 @@
 TBA
 This is a political project. Issues which are not related to the project itself may be closed.
 
-## Engaging in Our Project
+## Engaging in My Project
 
-We use GitHub to manage reviews of pull requests.
+I use GitHub to manage reviews of pull requests.
 
 * If you are a new contributor, see: [Steps to Contribute](#steps-to-contribute)
 
-* If you have a trivial fix or improvement, go ahead and create a pull request, addressing (with `@...`) a suitable maintainer of this repository (see [CODEOWNERS](CODEOWNERS) of the repository you want to contribute to) in the description of the pull request.
+* If you have a trivial fix or improvement, go ahead and create a pull request, addressing me (with `@Phisto`) in the description of the pull request.
 
 * If you plan to do something more involved, please reach out to us and send an [email](mailto:phisto05@gmail.com). This will avoid unnecessary work and surely give you and us a good deal of inspiration.
 
