@@ -1,6 +1,6 @@
 # General VM Setup
 
-See [ssh-setup](./ssh-setup-md) for SSH setup in general.
+See [ssh-setup](./ssh-setup.md) for SSH setup in general.
 
 ### Initialise a fresh VM
 To initialise a fresh VM if you are logged in as root user:
