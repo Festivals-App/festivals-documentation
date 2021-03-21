@@ -10,3 +10,4 @@ chmod +x vm-init.sh
 sudo ./vm-init.sh <admin_name> <admin_password>
 
 ```
+Then exit and login as the newly created admin user.
