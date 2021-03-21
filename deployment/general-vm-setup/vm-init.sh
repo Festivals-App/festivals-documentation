@@ -22,16 +22,27 @@ echo "Password and username are valid"
 sleep 1
 
 # Create the user that will be used for administrate this server.
+# Supported adduser with and without --gecos option.
 #
 echo "Creating the admin account"
-adduser --gecos "" --disabled-password $admin_name
-chpasswd <<<"$admin_name:$admin_password"
 sleep 1
+if adduser --help | grep -e "--gecos" > /dev/null; then
+  adduser --disabled-password --gecos "" $admin_name
+else
+  adduser $admin_name
+fi
+chpasswd <<<"$admin_name:$admin_password"
 
 # Set privileges for the admin account.
 #
 echo "Set privileges for the admin account"
 usermod -aG sudo $admin_name
+sleep 1
+
+# Enabling SSH access for the admin user
+#
+echo "Enabling SSH access for the admin user"
+rsync --archive --chown="$admin_name:$admin_name" ~/.ssh "/home/$admin_name"
 sleep 1
 
 # Enables and configures the firewall.
