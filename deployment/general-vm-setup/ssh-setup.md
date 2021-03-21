@@ -1,4 +1,4 @@
-# VM Setup: Creating SSH Keys
+# General VM Setup: SSH Access
 
 ### Setup
 
