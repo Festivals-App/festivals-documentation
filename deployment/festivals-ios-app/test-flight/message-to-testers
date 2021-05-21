@@ -1,4 +1,6 @@
 
+Dear Testies,
+
 In this test round I am not so much concerned with errors and details but first of all with the rough structure of the app an the option to change the app theme.
 
 Currently there are three festivals available for testing:
@@ -21,14 +23,16 @@ I hope I made it clear what interests me the most. If you have any other suggest
 
 LG Simon
 
+Liebe Testies,
 
+in dieser Testrunde geht es mir sowohl um den generellen Aufbau der App als auch besonders um das Testen des Theater-Festivals, da ich seit der letzen Version einiges geändert habe.
 
-In dieser Testrunde geht es mir nicht so sehr um Fehler und Details sondern vorerst um den groben Aufbau der App und das Ändern des Farbschemas.
+Wie immer gilt, dass die Zeitangaben noch Fehler habe, da ich versuche die Zeit des Hin & Weg Festivals zu simulieren und das manchmal nicht so ganz klappt.
 
 Für das Testen stehen zur Zeit drei Festivals zur Auswahl:
 - Soundsgood Festival: Ein relativ vollständiges Festival mit Timetable usw.
 - Welcome to Pandemia: Ein Festival bei dem noch fast alle Informationen fehlen, zum Testen was angezeigt wird wenn noch nichts geladen wurde.
-- Hin & Weg 2020: Beispiel für ein Theater-Festival. Ist zur Zeit auch noch Unvollständig.
+- Hin & Weg 2020: Beispiel für ein Theater-Festival. Wurde jetzt soweit angepasst.
 
 Einige generelle Fragen sind:
 - Ist beim ersten Start direkt verständlich wo du dich befindest?
@@ -36,10 +40,10 @@ Einige generelle Fragen sind:
 - Hättest du bestimmte Funktionen woanders erwartet?
 - Ist dir immer klar wie du wieder zu einer bestimmten Ansicht zurück kommst?
 
-Einige Fragen zum Farbschema:
-- Befindet sich die Option zum ändern des Farbschemas dort wo du sie erwartet hast?
-- Reichen dir die gegebenen Farbschemata?
-- Wenn nein, hast du einen konkreten Wunsch für ein neues Farbschema?
+Einige Fragen zum Theaterfestival:
+- Ist die Sortierung für so ein komplexes Festival ausreichen?
+- Was sollte in der NowPlaying-Ansicht angezeigt werden?
+- Hast du einen konkreten Wunsch der die Darstellung verbessern würde?
 
 Ich hoffe ich konnte so ein bisschen klar machen was mich gerade am meisten Interessiert. Wenn ihr sonst Anregungen, Fragen oder auch Fehlermeldungen und Sachen die euch stören habt, bin ich natürlich dafür auch ganz Ohr :)
 
