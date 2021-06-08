@@ -12,7 +12,7 @@ Project Title
     <a href="#development">Development</a> •
     <a href="#deployment">Deployment</a> • 
     <a href="#documentation-architecture">Documentation & Architecture</a> •
-    <a href="#contribute--feedback">Contribute & Feedback</a> •
+    <a href="#Engage--feedback">Engage & Feedback</a> •
     <a href="#licensing">Licensing</a>
 </p>
 
@@ -52,7 +52,7 @@ Project Title
 The general documentation for the Festivals App is in the [festivals-documentation](https://github.com/festivals-app/festivals-documentation) repository. The documentation repository contains architecture information, general deployment documentation, templates and other helpful documents.
 
 
-# Contribute & Feedback
+# Engage & Feedback
 
 I welcome every contribution, whether it is a pull request or a fixed typo.
 
