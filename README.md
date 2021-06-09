@@ -31,7 +31,7 @@ I want to expand the idea and practice of who is a stakholder in this project. F
 #### Me
 
 My name is Simon and i'm a berlin based developer, work at the Humboldt-Universität as IT-support, and study area studies asia/africa. 
-At the moment i am the sole developer of this project but i am excited for people to join me :)
+At the moment i'm the sole developer of this project but i'm excited for people to join me :)
 
 
 ## A starting point
