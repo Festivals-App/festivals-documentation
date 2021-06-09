@@ -14,8 +14,7 @@ FestivalsApp Documentation
 
 <hr />
 <p align="center">
-    <a href="#me">Me</a> •
-    <a href="#starting-point">Starting point</a> •
+    <a href="#starting-point">A starting point</a> •
     <a href="#engage">Engage</a> •
     <a href="#credits">Credits</a> •
     <a href="#licensing">Licensing</a> •
@@ -30,12 +29,13 @@ The app is also an experiment as it is financed only by donations and trys to av
 I want to expand the idea and practice of who is a stakholder in this project. For me everyone who uses the app or is impacted by it should have as much saying in the future development of the app as i have as the developer. I deeply believe that the best app is an app that everyone agreed upon, and i am eager to hear about your visions for the FestivalsApp.
 
 
-### Me
+#### Me
 
-My name is Simon and i'm a berlin based developer, work at the Humboldt-Universität as IT-support, and study area studies asia/africa. At the moment i am the sole developer of this project but i am excited for people to join me :)
+My name is Simon and i'm a berlin based developer, work at the Humboldt-Universität as IT-support, and study area studies asia/africa. 
+At the moment i am the sole developer of this project but i am excited for people to join me :)
 
 
-## Starting point
+## A starting point
 
 I welcome you to browse the repositories and dig your way through all the parts and pieces but as this project consists of so many components i would recommend you to first read the [ARCHITECTURE](./ARCHITECTURE.md) document to get a better understanding of how this project works. Every project has a development and a deployment section in the project README file, explaining more detailed on how to develop and how to deploy the given project.
 
