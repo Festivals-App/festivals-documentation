@@ -24,13 +24,13 @@ FestivalsApp Documentation
 
 The FestivalsApp is a digital and mobile version of a festival booklet. The app accompanies the visitors during the festival and lets them plan their activities beforehand.
 
-The app is also an experiment as it is financed only by donations and trys to avoid some behaviors and practices of other apps: i do not collect any user data or display advertising. Not only does the app reject some common practices it also trys to do things better, for example bettter transparency, from an radical open source approach down to the operating costs and donation revenues.
+The app is also an experiment as it is financed only by donations and tries to avoid some behaviors and practices of other apps: i do not collect any user data or display advertising. Not only does the app reject some common practices it also tries to do things better, for example better transparency, from an radical open source approach down to the operating costs and donation revenues.
 
-I want to expand the idea and practice of who is a stakholder in this project. For me everyone who uses the app or is impacted by it should have as much saying in the future development of the app as i have as the developer. I deeply believe that the best app is an app that everyone agreed upon, and i am eager to hear about your visions for the FestivalsApp.
+I want to expand the idea and practice of who is a stakeholder in this project. For me everyone who uses the app or is impacted by it should have as much saying in the future development of the app as i have as the developer. I deeply believe that the best app is an app that everyone agreed upon, and i am eager to hear about your visions for the FestivalsApp.
 
 #### Me
 
-My name is Simon and i'm a berlin based developer, work at the Humboldt-Universität as IT-support, and study area studies asia/africa. 
+My name is Simon and i'm a Berlin based developer, work at the Humboldt-Universität as IT-support, and study area studies Asia/Africa. 
 At the moment i'm the sole developer of this project but i'm excited for people to join me :)
 
 
@@ -43,9 +43,9 @@ I welcome you to browse the repositories and dig your way through all the parts 
 
 ## Engage
 
-As every compontent and process of this project is open source, you can theoretically engage in every aspect of it. Though there are some practical limitations to that openness, for example i cannot give access to things like infrastructure and accounts to people i don't know, but you are free to propose things to be opened more if you think you have good arguments for that.
+As every component and process of this project is open source, you can theoretically engage in every aspect of it. Though there are some practical limitations to that openness, for example i cannot give access to things like infrastructure and accounts to people i don't know, but you are free to propose things to be opened more if you think you have good arguments for that.
 
-From people who want to engage i expect fairness and self-reliance, as i am not the coordinator for what you want to contribute to the project, and **i advise you to think twice if you want to be part of a project where everyone has the same rights and obligations**, as we need to find a way to make that work for both of us and everyone involved. I also would advise you to start with smaller contributions, if you want to completely redesign a whole aspect of the project there are so many things to consider, i would likely need half a year to reply to your request. However, i will alsways try to help you within the scope of my ability and time to utilize portions of the project to realize your ideas.
+From people who want to engage i expect fairness and self-reliance, as i am not the coordinator for what you want to contribute to the project, and **i advise you to think twice if you want to be part of a project where everyone has the same rights and obligations**, as we need to find a way to make that work for both of us and everyone involved. I also would advise you to start with smaller contributions, if you want to completely redesign a whole aspect of the project there are so many things to consider, i would likely need half a year to reply to your request. However, i will always try to help you within the scope of my ability and time to utilize portions of the project to realize your ideas.
 
 See the [ENGAGING](./ENGAGING.md) document for more information. 
 
