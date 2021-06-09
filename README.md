@@ -2,9 +2,18 @@
  <a href=" https://festivalsapp.org/"><img src="https://github.com/Festivals-App/festivals-documentation/blob/master/images/festivals_title.png" width="180"></a>
 </p>
 
+<h1 align="center">
+FestivalsApp Documentation
+</h1>
+
+<p align="center">
+   <a href="https://github.com/festivals-app/festivals-documentation/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/festivals-app/festivals-documentation?style=flat"></a>
+   <a href="https://github.com/festivals-app/festivals-documentation/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/festivals-app/festivals-documentation?style=flat"></a>
+   <a href="./LICENSE" title="License"><img src="https://img.shields.io/github/license/festivals-app/festivals-documentation.svg"></a>
+</p>
+
 <hr />
 <p align="center">
-    <a href="#the-festivalsapp">FestivalsApp</a> •
     <a href="#me">Me</a> •
     <a href="#engage">Engage</a> •
     <a href="#credits">Credits</a> •
@@ -13,18 +22,11 @@
 </p>
 <hr />
 
-<p align="center">
-   <a href="https://github.com/festivals-app/festivals-documentation/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/festivals-app/festivals-documentation?style=flat"></a>
-   <a href="https://github.com/festivals-app/festivals-documentation/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/festivals-app/festivals-documentation?style=flat"></a>
-   <a href="./LICENSE" title="License"><img src="https://img.shields.io/github/license/festivals-app/festivals-documentation.svg"></a>
-</p>
+The FestivalsApp is a digital and mobile replacement or companion for a festival booklet. The app accompanies the visitors during the festival and lets them plan their activities beforehand. For festival organizers it gives them the opportunity to complete their offerings to their visitors with a digital app.
 
-# The FestivalsApp
+The app is also an experiment as it is financed only by donations and trys to avoid some behaviors and practices of other apps: the app does not collect any user data or display advertising. Not only does the app reject some common practices it also trys to do things better, for example bettter transparency, from an radical open source approach down to the operating costs and donation revenues.
 
-The FestivalsApp is a digital and mobile replacement for a festival booklet. The app accompanies the visitors during the festival and lets them plan their activities beforehand. 
-For festival organizers it gives them the opportunity to complete their offerings to their visitors with a digital app. The app is also an experiment as it is financed only by donations and trys to avoid every behavior and best practices of other apps: the app does not collect any user data or display advertising. Not only does the app reject some common practices it also try to do things better, for example transparency, from an radical open source approach down to the operating costs and donation revenues.
-
-As for how i operate the app, i want to expand the idea of who is a stakholder in this project. For me everyone who uses the app or is impacted by it should have as much saying in the future development of the app as i as the developer have. I deeply believe that the best app is an app that everyone agreed upon, and i am eager to hear about your visions for the FestivalsApp.
+I want to expand the idea and practice of who is a stakholder in this project. For me everyone who uses the app or is impacted by it should have as much saying in the future development of the app as i have as the developer. I deeply believe that the best app is an app that everyone agreed upon, and i am eager to hear about your visions for the FestivalsApp.
 
 ### Me
 
