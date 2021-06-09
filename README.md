@@ -24,10 +24,9 @@ FestivalsApp Documentation
 
 The FestivalsApp is a digital and mobile version of a festival booklet. The app accompanies the visitors during the festival and lets them plan their activities beforehand.
 
-The app is also an experiment as it is financed only by donations and trys to avoid some behaviors and practices of other apps: the app does not collect any user data or display advertising. Not only does the app reject some common practices it also trys to do things better, for example bettter transparency, from an radical open source approach down to the operating costs and donation revenues.
+The app is also an experiment as it is financed only by donations and trys to avoid some behaviors and practices of other apps: i do not collect any user data or display advertising. Not only does the app reject some common practices it also trys to do things better, for example bettter transparency, from an radical open source approach down to the operating costs and donation revenues.
 
 I want to expand the idea and practice of who is a stakholder in this project. For me everyone who uses the app or is impacted by it should have as much saying in the future development of the app as i have as the developer. I deeply believe that the best app is an app that everyone agreed upon, and i am eager to hear about your visions for the FestivalsApp.
-
 
 #### Me
 
@@ -37,7 +36,9 @@ At the moment i am the sole developer of this project but i am excited for peopl
 
 ## A starting point
 
-I welcome you to browse the repositories and dig your way through all the parts and pieces but as this project consists of so many components i would recommend you to first read the [ARCHITECTURE](./ARCHITECTURE.md) document to get a better understanding of how this project works. Every project has a development and a deployment section in the project README file, explaining more detailed on how to develop and how to deploy the given project.
+The information in this repository and the whole project on GitHub is aimed at developers and people familar with programming, but i try to be as inclusive as possible. As i plan on using GitHub to collect and manage feature requests, bug reports and project resources, in short, almost everything regarding this project, i encourage everyone who wants to engage in this project to make yourself familar on how to use GitHub. There are guides on the internet that can help you with that, for example [What Is GitHub? A Beginner’s Introduction to GitHub](https://kinsta.com/knowledgebase/what-is-github/). And GitHub is providing some detailed guides on how to use it, for example [Creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-issues/creating-an-issue). I plan to add a more non-developer focused way to get to know the project, possibly at the apps [website](https://festivalsapp.org/).
+
+I welcome you to browse the repositories and dig your way through all the parts and pieces but as this project consists of so many components i would recommend you to first read the [ARCHITECTURE](./ARCHITECTURE.md) document to get a better understanding of how this project works. For more detail on a specific component you can go to its repository and every project has a development and a deployment section in the project README file, explaining more detailed how to develop and deploy the given component.
 
 
 ## Engage
