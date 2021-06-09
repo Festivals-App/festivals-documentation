@@ -47,13 +47,13 @@ As every compontent and process of this project is open source, you can theoreti
 
 From people who want to engage i expect fairness and self-reliance, as i am not the coordinator for what you want to contribute to the project, and **i advise you to think twice if you want to be part of a project where everyone has the same rights and obligations**, as we need to find a way to make that work for both of us and everyone involved. I also would advise you to start with smaller contributions, if you want to completely redesign a whole aspect of the project there are so many things to consider, i would likely need half a year to reply to your request. However, i will alsways try to help you within the scope of my ability and time to utilize portions of the project to realize your ideas.
 
-See the [ENGAGE](./ENGAGE) document. 
+See the [ENGAGING](./ENGAGING.md) document for more information. 
 
 
 ## Credits
 
 Unfinished list of friends who helped me: Niklas, Dennis, Fabia, Marion, Anna, Luisa, Johanna, Jacque, Paul, Gregor
-#
+
 A lot more credits will follow...
 
 ## Licensing
