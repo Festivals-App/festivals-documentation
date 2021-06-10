@@ -56,6 +56,7 @@ Unfinished list of friends who helped me: Niklas, Dennis, Fabia, Marion, Anna, L
 
 A lot more credits will follow...
 
+
 ## Licensing
 
 Copyright (c) 2017-2021 Simon Gaus.
