@@ -52,7 +52,7 @@ See the [ENGAGING](./ENGAGING.md) document for more information.
 
 ## Credits
 
-Unfinished list of friends who helped me: Niklas, Dennis, Fabia, Marion, Anna, Luisa, Johanna, Jacque, Paul, Gregor
+Unfinished list of friends who helped me: Niklas, Dennis, Fabia, Marion, Anna, Luisa, Johanna, Jacque, Paul, Gregor, Dana
 
 A lot more credits will follow...
 
