@@ -28,10 +28,10 @@ The app is also an experiment as it is financed only by donations and tries to a
 
 I want to expand the idea and practice of who is a stakeholder in this project. For me everyone who uses the app or is impacted by it should have as much saying in the future development of the app as i have as the developer. I deeply believe that the best app is an app that everyone agreed upon, and i am eager to hear about your visions for the FestivalsApp. I'm especially happy to hear Woman, LGBTQ+ and Black/BIPOC voices as well as voices from people with disabilities.
 
-#### Me
+#### About
 
 My name is Simon and i'm a Berlin based developer, work at the Humboldt-Universität as IT-support, and study area studies Asia/Africa. 
-At the moment i'm the sole developer of this project but i'm excited for people to join me :)
+At the moment i'm the sole developer of this project but i'm excited for people to join :)
 
 
 ## A starting point
