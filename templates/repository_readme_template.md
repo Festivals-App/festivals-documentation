@@ -5,64 +5,105 @@ Project Title
 <p align="center">
    <a href="https://github.com/festivals-app/<project_path>/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/festivals-app/<project_path>?style=flat"></a>
    <a href="https://github.com/festivals-app/<project_path>/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/festivals-app/<project_path>?style=flat"></a>
+   <a href="https://github.com/Carthage/Carthage" title="Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
    <a href="./LICENSE" title="License"><img src="https://img.shields.io/github/license/festivals-app/<project_path>.svg"></a>
 </p>
 
 <p align="center">
+    <a href="#overview">Overview</a> •
     <a href="#development">Development</a> •
     <a href="#deployment">Deployment</a> • 
-    <a href="#documentation-architecture">Documentation & Architecture</a> •
-    <a href="#Engage--feedback">Engage & Feedback</a> •
+    <a href="#usage">Usage</a> •
+    <a href="#installation">Installation</a> •
+    <a href="#architecture">Architecture</a> •
+    <a href="#engage">Engage</a> •
     <a href="#licensing">Licensing</a>
 </p>
 
 <General description of this repository>
 
-# Development
+## Overview
+
+<Give a nice overview of the project>
+
+## Development
 
 <General description of the development process and important notes about developing this repository.>
 
-## Requirements
+### Setup
 
-- Xcode 12.4.1+
-- swift-tools-version:5.3+
-- [jazzy](https://github.com/realm/jazzy) 0.13.6+ (for building the documentation)
+1. Install and setup Xcode 13.1 or higher
+2. Install jazzy
+   ```console
+   brew install jazzy
+   ```
+3. Install bartycrouch
+   ```console
+   brew install bartycrouch
+   ```
 
-### Setup 
+### Build
 
-<Description of how to setup a sufficient development environment.>
+<How can one build the project (if applicable)>
 
-
-# Deployment
-
-<General description of the deplyment process and important notes about deplyoing this repository.>
-
-## Requirements
+### Requirements
 
 - Ubuntu 18.0+
 - Go 1.15.8+
+- iOS/macOS/Other 13.0+
+- Xcode 13.1+
+- swift-tools-version:5.3+
+- [jazzy](https://github.com/realm/jazzy) 0.13.6+ for building the documentation
+- [bartycrouch](https://github.com/Flinesoft/BartyCrouch) 4.8.0+ for string localization
 
-## Building
+## Deployment
 
+<General description of the deployment process and important notes about deplyoing this repository.>
 
-# Documentation & Architecture
+## Usage
 
-<Description of how and where this reopsitory is documented.>
+<General description of the usage and important notes about using this repository.>
 
-The general documentation for the Festivals App is in the [festivals-documentation](https://github.com/festivals-app/festivals-documentation) repository. The documentation repository contains architecture information, general deployment documentation, templates and other helpful documents.
+## Installation
 
+### Carthage
 
-# Engage & Feedback
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate TimetableKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
-I welcome every contribution, whether it is a pull request or a fixed typo.
+```ogdl
+github "Festivals-App/<project>" ~> 0.1
+```
 
-The best place to discuss questions and suggestions regarding <project> is the [issues](https://github.com/festivals-app/<project_path>/issues/) section on github. If this doesn't fit you proposal or reason to contact me, there are some more general purpose communication channels where you can reach me, listed in the following table.
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but <project> does support its use on supported platforms.
+
+Once you have your Swift package set up, adding <project> as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/Festivals-App/<project>.git", .upToNextMajor(from: "0.1"))
+]
+```
+
+## Architecture
+
+![Figure 1: Architecture Overview Highlighted](https://github.com/Festivals-App/festivals-documentation/blob/main/images/architecture/overview.png "Figure 1: Architecture Overview Highlighted")
+
+<General information about the place of the project in regard of the FestivalsApp project.> To find out more about architecture and technical information see the [ARCHITECTURE](./ARCHITECTURE.md) document.
+
+The full documentation for the FestivalsApp is in the [festivals-documentation](https://github.com/festivals-app/festivals-documentation) repository. The documentation repository contains technical documents, architecture information, UI/UX specifications, and whitepapers related to this implementation.
+
+## Engage
+
+I welcome every contribution, whether it is a pull request or a fixed typo. The best place to discuss questions and suggestions regarding the <project> is the projects [issues](https://github.com/Festivals-App/<project>/issues) section. More general information and a good starting point if you want to get involved is the [festival-documentation](https://github.com/Festivals-App/festivals-documentation) repository.
+
+If this doesn't fit you proposal or reason to contact me, there are some more general purpose communication channels where you can reach me, listed in the following table.
 
 | Type                     | Channel                                                |
 | ------------------------ | ------------------------------------------------------ |
 | **General Discussion**   | <a href="https://github.com/festivals-app/festivals-documentation/issues/new/choose" title="General Discussion"><img src="https://img.shields.io/github/issues/festivals-app/festivals-documentation/question.svg?style=flat-square"></a> </a>   |
 | **Other Requests**    | <a href="mailto:simon.cay.gaus@gmail.com" title="Email me"><img src="https://img.shields.io/badge/email-Simon-green?logo=mail.ru&style=flat-square&logoColor=white"></a>   |
-
 
 ## Licensing
 
