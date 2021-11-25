@@ -46,6 +46,10 @@ Project Title
 
 <How can one build the project (if applicable)>
 
+### Testing
+
+<How is the project tested?>
+
 ### Requirements
 
 - Ubuntu 18.0+
