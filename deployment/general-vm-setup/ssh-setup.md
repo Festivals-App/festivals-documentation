@@ -2,7 +2,7 @@
 
 ### Setup
 
-Generate a SSH key pair:
+Generate a SSH key pair on client machine:
 ```bash
 ssh-keygen -t rsa
 ```
@@ -22,8 +22,13 @@ Host <IP address or hostname>
   IdentityFile ~/.ssh/<id_rsa_....>
 ```
 
+Copy public key to server:
+`ssh-copy-id -i ~/.ssh/<key.pub> <username>@<IP address or hostname>`
+
 Login with:
- `ssh root@<IP address or hostname>`
+ `ssh <username>@<IP address or hostname>`
+
+For development it is okay to use one key pair for all development server, see [best-practice](https://security.stackexchange.com/questions/40050/best-practice-separate-ssh-key-per-host-and-user-vs-one-ssh-key-for-all-hos) discussion on stackexchange.
 
 ### Digital Ocean Setup
 
