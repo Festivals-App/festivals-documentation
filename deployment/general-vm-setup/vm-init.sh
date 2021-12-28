@@ -2,8 +2,6 @@
 #
 # vm-init.sh 1.0.0
 #
-# <Description>
-#
 # (c)2021 Simon Gaus
 #
 
@@ -49,19 +47,7 @@ sleep 1
 # Supported firewalls: ufw and firewalld
 # This step is skipped under macOS.
 #
-if command -v firewalld > /dev/null; then
-
-  systemctl enable firewalld >/dev/null
-  systemctl start firewalld >/dev/null
-  echo "Enabled firewalld"
-  sleep 1
-
-  firewall-cmd --permanent --add-service=ssh >/dev/null
-  firewall-cmd --reload >/dev/null
-  echo "Added ssh service to firewalld rules"
-  sleep 1
-
-elif command -v ufw > /dev/null; then
+if command -v ufw > /dev/null; then
 
   ufw default deny incoming
   ufw default allow outgoing
