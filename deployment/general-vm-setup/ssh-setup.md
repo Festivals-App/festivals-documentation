@@ -30,8 +30,9 @@ Copy public key to server:
 Login with:
  `ssh <username>@<IP address or hostname>`
 
-For development it is okay to use one key pair for all development server, 
-see [best-practice](https://security.stackexchange.com/questions/40050/best-practice-separate-ssh-key-per-host-and-user-vs-one-ssh-key-for-all-hos) discussion on stackexchange.
+For development it is okay to use one key pair for all development server, see 
+[best-practice](https://security.stackexchange.com/questions/40050/best-practice-separate-ssh-key-per-host-and-user-vs-one-ssh-key-for-all-hos) 
+discussion on stackexchange.
 
 ## Securing the server
 
@@ -59,4 +60,5 @@ and change the necessary values:
 ### Digital Ocean Setup
 
 Following this guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
+
 Security best practices (german): https://blog.buettner.xyz/sichere-ssh-konfiguration/
