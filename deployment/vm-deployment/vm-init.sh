@@ -37,14 +37,13 @@ echo "Set privileges for the admin account"
 usermod -aG sudo $admin_name
 sleep 1
 
-# Enabling SSH access for the admin user
+# Enabling SSH access for the admin user by copying roots ssh dir to the new admin user
 #
 echo "Enabling SSH access for the admin user"
 rsync --archive --chown="$admin_name:$admin_name" ~/.ssh "/home/$admin_name"
 sleep 1
 
 # Enables and configures the firewall.
-# Supported firewalls: ufw and firewalld
 # This step is skipped under macOS.
 #
 if command -v ufw > /dev/null; then
