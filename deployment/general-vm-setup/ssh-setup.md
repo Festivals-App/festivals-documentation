@@ -36,15 +36,24 @@ see [best-practice](https://security.stackexchange.com/questions/40050/best-prac
 ## Securing the server
 
 After making sure you can login via public key disable password authentication on the server by editing the `sshd_config`:
-`sudo nano /etc/ssh/sshd_config`
+```bash
+sudo nano /etc/ssh/sshd_config
+```
 
 and change the necessary values:
-`PermitRootLogin yes`                 to `PermitRootLogin prohibit-password`
-`StrictModes no`                      to `StrictModes yes`
-`PubkeyAuthentication no`             to `PubkeyAuthentication yes`
-`HostbasedAuthentication yes`         to `HostbasedAuthentication no`
-`PasswordAuthentication yes`          to `PasswordAuthentication no`
-`PermitEmptyPasswords yes`            to `PermitEmptyPasswords no`
+
+`PermitRootLogin yes` to `PermitRootLogin prohibit-password`
+
+`StrictModes no` to `StrictModes yes`
+
+`PubkeyAuthentication no` to `PubkeyAuthentication yes`
+
+`HostbasedAuthentication yes` to `HostbasedAuthentication no`
+
+`PasswordAuthentication yes` to `PasswordAuthentication no`
+
+`PermitEmptyPasswords yes` to `PermitEmptyPasswords no`
+
 `ChallengeResponseAuthentication yes` to `ChallengeResponseAuthentication no`
 
 ### Digital Ocean Setup
