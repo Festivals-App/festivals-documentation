@@ -43,3 +43,14 @@ You are welcome to contribute code in order to fix a bug or to implement a new f
 
 TBA
 This is a political project. Issues which are not related to the project itself may be closed.
+
+## Semantic Versioning
+
+I use [semantic versioning](https://semver.org/) wherever possible and practical.  Version numbers are presented as Major.Minor.Patch, for example, v1.2.3.
+
+- Major versions contain breaking changes.
+- Minor versions add new features or deprecate existing features without breaking changes.
+- Patch versions fix defects or optimize existing features without breaking changes.
+
+As soon as i realize that i have released a breaking change as part of a minor release, i will release a new minor version that corrects the problem and restores backward compatibility.
+Even under this circumstance, i will not modify versioned releases.
