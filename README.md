@@ -14,11 +14,11 @@
    <a href="./LICENSE" title="License"><img src="https://img.shields.io/github/license/festivals-app/festivals-documentation.svg"></a>
 </p>
 
-<br/><br/>
 <h1 align="center">
+    <br/><br/>
     Festivals App Documentation
+    <br/><br/>
 </h1>
-<br/><br/>
 
 The FestivalsApp is a digital and mobile version of a festival booklet. The app accompanies the visitors during the festival and lets them plan their activities beforehand.
 
