@@ -4,7 +4,7 @@
 
 <h2 align="center">
     FestivalsApp Documentation
-</h>
+</h2>
 
 <p align="center">
    <a href="https://github.com/festivals-app/festivals-documentation/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/festivals-app/festivals-documentation?style=flat"></a>
