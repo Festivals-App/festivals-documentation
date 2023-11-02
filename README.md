@@ -3,19 +3,13 @@
    <a href="https://github.com/festivals-app/festivals-documentation/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/festivals-app/festivals-documentation?style=flat"></a>
    <a href="./LICENSE" title="License"><img src="https://img.shields.io/github/license/festivals-app/festivals-documentation.svg"></a>
 </p>
-
 \
 \
-\
-
 <h3 align="center">
     Festivals App Documentation
 </h3>
-
 \
 \
-\
-
 <hr />
 <p align="center">
     <a href="#starting-point">A starting point</a> •
