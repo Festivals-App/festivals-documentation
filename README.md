@@ -8,9 +8,8 @@
     <br></br>
     Festivals App Documentation
     <br></br>
-</h2>
+</h1>
 
-<hr />
 <p align="center">
     <a href="#starting-point">A starting point</a> •
     <a href="#engage">Engage</a> •
@@ -18,7 +17,7 @@
     <a href="#licensing">Licensing</a> •
     <a href="https://festivalsapp.org/">Website</a>
 </p>
-<hr />
+<hr /><hr style="height:1px;border-width:0;color:gray;background-color:gray">
 
 The FestivalsApp is a digital and mobile version of a festival booklet. The app accompanies the visitors during the festival and lets them plan their activities beforehand.
 
