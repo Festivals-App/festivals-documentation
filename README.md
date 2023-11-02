@@ -2,8 +2,10 @@
  <a href=" https://festivalsapp.org/"><img src="https://github.com/Festivals-App/festivals-documentation/blob/main/images/festivals_title.png" width="180"></a>
 </p>
 
-<p align="center" style="font-size: x-large">
-FestivalsApp Documentation
+<p align="center">
+<font size="2.125rem">
+    FestivalsApp Documentation
+</font>  
 </p>
 
 <p align="center">
