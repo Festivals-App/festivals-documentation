@@ -10,22 +10,18 @@
     <br/><br/>
 </h1>
 
-The FestivalsApp is a digital and mobile version of a festival booklet. The app accompanies the visitors during the festival and lets them plan their activities beforehand.
+This project is developing a software plattform for festival guests and organizer, called "[FestivalsApp](https://festivalsapp.org)".
 
 <hr />
 <p align="center">
     <a href="#starting-point">A starting point</a> •
     <a href="#engage">Engage</a> •
+    <a href="#about">About</a> •
     <a href="#credits">Credits</a> •
     <a href="#licensing">Licensing</a> •
     <a href="https://festivalsapp.org/">Website</a>
 </p>
 <hr/>
-
-#### About
-
-My name is Simon and i'm a Berlin based developer, work at the Humboldt-Universität as IT-support, and study area studies Asia/Africa. 
-At the moment i'm the sole developer of this project but i'm excited for people to join :)
 
 ## A starting point
 
@@ -47,6 +43,11 @@ See the [ENGAGING](./ENGAGING.md) document for more information.
 The app is an experiment as it is financed only by donations and tries to avoid some behaviors and practices of other apps: it does not collect any user data or display advertising. Not only does the app reject some common practices it also tries to do things better, for example better transparency, from an radical open source approach down to the operating costs and donation revenues.
 
 I want to expand the idea and practice of who is a stakeholder in this project. For me everyone who uses the app or is impacted by it should have as much saying in the future development of the app as i have as the developer. I deeply believe that the best app is an app that everyone agreed upon, and i am eager to hear about your visions for the FestivalsApp. I'm especially happy to hear Woman, LGBTQ+ and Black/BIPOC voices as well as voices from people with disabilities.
+
+#### About
+
+My name is Simon and i'm a Berlin based developer, work at the Humboldt-Universität as IT-support, and study area studies Asia/Africa. 
+At the moment i'm the sole developer of this project but i'm excited for people to join :)
 
 ## Credits
 
