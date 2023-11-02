@@ -1,16 +1,16 @@
 <p align="center">
+   <a href="https://github.com/festivals-app/festivals-documentation/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/festivals-app/festivals-documentation?style=flat"></a>
+   <a href="https://github.com/festivals-app/festivals-documentation/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/festivals-app/festivals-documentation?style=flat"></a>
+   <a href="./LICENSE" title="License"><img src="https://img.shields.io/github/license/festivals-app/festivals-documentation.svg"></a>
+</p>
+
+<p align="center">
  <a href=" https://festivalsapp.org/"><img src="https://github.com/Festivals-App/festivals-documentation/blob/main/images/festivals_title.png" width="180"></a>
 </p>
 
 <h2 align="center">
     FestivalsApp Documentation
 </h2>
-
-<p align="center">
-   <a href="https://github.com/festivals-app/festivals-documentation/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/festivals-app/festivals-documentation?style=flat"></a>
-   <a href="https://github.com/festivals-app/festivals-documentation/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/festivals-app/festivals-documentation?style=flat"></a>
-   <a href="./LICENSE" title="License"><img src="https://img.shields.io/github/license/festivals-app/festivals-documentation.svg"></a>
-</p>
 
 <hr />
 <p align="center">
