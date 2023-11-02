@@ -36,6 +36,8 @@ At the moment i'm the sole developer of this project but i'm excited for people 
 
 ## A starting point
 
+![Figure 1: Architecture Overview Highlighted](https://github.com/Festivals-App/festivals-documentation/blob/main/images/architecture/overview_docs.png "Figure 1: Architecture Overview Highlighted")
+
 Most of the documents on GitHub are aimed at developers and people familar with programming, but i try to be as inclusive as possible. As i plan on using GitHub to collect and manage feature requests, bug reports and project resources, in short, almost everything regarding this project, i encourage everyone who wants to engage in this project to make yourself familar on how to use GitHub. There are guides on the internet that can help you with that, for example [What Is GitHub? A Beginner’s Introduction to GitHub](https://kinsta.com/knowledgebase/what-is-github/). And GitHub is providing some detailed guides on how to use it, for example [Creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-issues/creating-an-issue). I plan to add a more non-developer focused way to get to know the project, possibly at the apps [website](https://festivalsapp.org/).
 
 I welcome you to browse the repositories and dig your way through all the parts and pieces but as this project consists of so many components i would recommend you to first read the [ARCHITECTURE](./ARCHITECTURE.md) document to get a better understanding of how this project works. For more detail on a specific component you can go to its repository and every project has a development and a deployment section in the projects README file, explaining more detailed how to develop and deploy the given component.
