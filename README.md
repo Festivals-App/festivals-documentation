@@ -10,9 +10,7 @@
     <br/><br/>
 </h1>
 
-<p align="center">
 This project is developing a software plattform for festival guests and organizer, called \"[FestivalsApp](https://festivalsapp.org)\".
-</p>
 
 <hr />
 <p align="center">
