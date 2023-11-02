@@ -1,3 +1,13 @@
+<hr />
+<p align="center">
+    <a href="#starting-point">A starting point</a> •
+    <a href="#engage">Engage</a> •
+    <a href="#credits">Credits</a> •
+    <a href="#licensing">Licensing</a> •
+    <a href="https://festivalsapp.org/">Website</a>
+</p>
+<hr/>
+
 <p align="center">
    <a href="https://github.com/festivals-app/festivals-documentation/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/festivals-app/festivals-documentation?style=flat"></a>
    <a href="https://github.com/festivals-app/festivals-documentation/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/festivals-app/festivals-documentation?style=flat"></a>
@@ -9,18 +19,6 @@
     Festivals App Documentation
 </h1>
 </br>
-
-<p align="center">
-    <a href="#starting-point">A starting point</a> •
-    <a href="#engage">Engage</a> •
-    <a href="#credits">Credits</a> •
-    <a href="#licensing">Licensing</a> •
-    <a href="https://festivalsapp.org/">Website</a>
-</p>
-
-
-<h1 align="center">
-</h1>
 
 The FestivalsApp is a digital and mobile version of a festival booklet. The app accompanies the visitors during the festival and lets them plan their activities beforehand.
 
