@@ -12,7 +12,7 @@
 
 This project is developing a software plattform for festival guests and organizer, called \"[FestivalsApp](https://festivalsapp.org)\".
 
-<hr />
+<hr/>
 <p align="center">
     <a href="#starting-point">A starting point</a> •
     <a href="#engage">Engage</a> •
