@@ -8,8 +8,10 @@
  <a href=" https://festivalsapp.org/"><img src="https://github.com/Festivals-App/festivals-documentation/blob/main/images/festivals_title.png" width="180"></a>
 </p>
 
-<h2 align="center">
+<h1 align="center">
+    <br></br>
     FestivalsApp Documentation
+    <br></br>
 </h2>
 
 <hr />
