@@ -2,11 +2,9 @@
  <a href=" https://festivalsapp.org/"><img src="https://github.com/Festivals-App/festivals-documentation/blob/main/images/festivals_title.png" width="180"></a>
 </p>
 
-<p align="center">
-<font size="2.125rem">
+<h2 align="center">
     FestivalsApp Documentation
-</font>  
-</p>
+</h>
 
 <p align="center">
    <a href="https://github.com/festivals-app/festivals-documentation/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/festivals-app/festivals-documentation?style=flat"></a>
