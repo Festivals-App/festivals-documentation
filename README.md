@@ -4,13 +4,12 @@
    <a href="./LICENSE" title="License"><img src="https://img.shields.io/github/license/festivals-app/festivals-documentation.svg"></a>
 </p>
 
-
-<h3 align="center">
+<br>
+<h1 align="center">
     Festivals App Documentation
-</h3>
+</h1>
+</br>
 
-
-<hr />
 <p align="center">
     <a href="#starting-point">A starting point</a> •
     <a href="#engage">Engage</a> •
