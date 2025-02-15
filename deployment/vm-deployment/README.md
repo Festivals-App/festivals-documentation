@@ -13,8 +13,7 @@ I use Ubuntu Server LTS as the operating system for the virtual machine due to i
 
 **It's important to note that the FestivalsApp backend and scripts have not been tested on distributions other than Ubuntu Server LTS. Using a different distribution may require adjustments or troubleshooting to ensure compatibility.**
 
-After you created a VM int Proxmox ([how-to](https://support.us.ovhcloud.com/hc/en-us/articles/360010916620-How-to-Create-a-VM-in-Proxmox-VE)) or created a new Droplet on Digitalocean [how-to](https://docs.digitalocean.com/products/droplets/how-to/create/) 
-https://ubuntu.com/tutorials/install-ubuntu-server#1-overview)
+After you created a VM int Proxmox ([how-to](https://support.us.ovhcloud.com/hc/en-us/articles/360010916620-How-to-Create-a-VM-in-Proxmox-VE)) or created a new Droplet on Digitalocean [how-to](https://docs.digitalocean.com/products/droplets/how-to/create/)
 
 ### vm-init.sh
 
