@@ -17,6 +17,7 @@ fi
 #
 admin_name=$1
 admin_password=$2
+echo
 echo "Password and username are valid"
 echo
 sleep 1
@@ -26,7 +27,7 @@ if ! id -u $admin_name > /dev/null 2>&1; then
 
 # Create the user that will be used for administrate this server.
 #
-echo "Creating the admin accoun $admin_name"
+echo "Creating the admin account '$admin_name'"
 echo
 sleep 1
 if adduser --help | grep -e "--gecos" > /dev/null; then
@@ -40,7 +41,6 @@ elif adduser --help | grep -e "--comment" > /dev/null; then
 else
   adduser --disabled-password $admin_name
 fi
-echo
 chpasswd <<<"$admin_name:$admin_password"
 
 # Set privileges for the admin account.
