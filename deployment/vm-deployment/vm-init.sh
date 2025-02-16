@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# vm-init.sh 1.0.0
+# vm-init.sh
 #
-# (c)2021 Simon Gaus
+# (c)2021-2025 Simon Gaus
 #
 
 # Check if all parameters are supplied
