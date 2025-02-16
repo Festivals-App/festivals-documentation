@@ -31,7 +31,7 @@ Using SSH keys for authentication enhances security and simplifies access to vir
 
 1. Adding SSH Keys via the Web Interface
    - When creating a new droplet, you can add an SSH key directly in the "Authentication" section.
-   - Pre-existing keys can be managed under `Settings → Security → SSH Keys`.  
+   - Available SSH keys can be managed under `Settings → Security → SSH Keys`.  
 
 2. Adding SSH Keys via the API  
    - Use the DigitalOcean API to programmatically add keys.  
