@@ -19,6 +19,9 @@ admin_password=$2
 echo "Password and username are valid"
 sleep 1
 
+# Check if user exists
+if ! id -u $admin_name > /dev/null 2>&1; then
+
 # Create the user that will be used for administrate this server.
 # Supported adduser with and without --gecos option.
 #
@@ -42,6 +45,13 @@ sleep 1
 echo "Enabling SSH access for the admin user"
 rsync --archive --chown="$admin_name:$admin_name" ~/.ssh "/home/$admin_name"
 sleep 1
+
+else 
+
+echo "Admin account already exists. Continuing..."
+sleep 1
+
+fi
 
 # Enables and configures the firewall.
 # This step is skipped under macOS.
