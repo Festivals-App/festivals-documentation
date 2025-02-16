@@ -23,14 +23,19 @@ sleep 1
 if ! id -u $admin_name > /dev/null 2>&1; then
 
 # Create the user that will be used for administrate this server.
-# Supported adduser with and without --gecos option.
 #
 echo "Creating the admin account"
 sleep 1
 if adduser --help | grep -e "--gecos" > /dev/null; then
+
   adduser --disabled-password --gecos "" $admin_name
+
+else if adduser --help | grep -e "--comment" > /dev/null; then
+
+  adduser --disabled-password --comment "" $admin_name
+
 else
-  adduser $admin_name
+  adduser --disabled-password $admin_name
 fi
 chpasswd <<<"$admin_name:$admin_password"
 
