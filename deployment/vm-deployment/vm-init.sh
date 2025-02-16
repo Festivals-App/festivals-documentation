@@ -33,7 +33,7 @@ if adduser --help | grep -e "--gecos" > /dev/null; then
 
   adduser --disabled-password --gecos "" $admin_name > /dev/null;
 
-else if adduser --help | grep -e "--comment" > /dev/null; then
+elif adduser --help | grep -e "--comment" > /dev/null; then
  
   adduser --disabled-password --comment "" $admin_name > /dev/null;
 
