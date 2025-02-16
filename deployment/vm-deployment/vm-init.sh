@@ -9,6 +9,7 @@
 #
 if [ $# -ne 2 ]; then
     echo "$0: usage: sudo ./vm-init.sh <admin_name> <admin_password>"
+    echo
     exit 1
 fi
 
@@ -17,6 +18,7 @@ fi
 admin_name=$1
 admin_password=$2
 echo "Password and username are valid"
+echo
 sleep 1
 
 # Check if user exists
@@ -24,31 +26,35 @@ if ! id -u $admin_name > /dev/null 2>&1; then
 
 # Create the user that will be used for administrate this server.
 #
-echo "Creating the admin account"
+echo "Creating the admin accoun $admin_name"
+echo
 sleep 1
 if adduser --help | grep -e "--gecos" > /dev/null; then
 
-  adduser --disabled-password --gecos "" $admin_name
+  adduser --disabled-password --gecos "" $admin_name > /dev/null;
 
 else if adduser --help | grep -e "--comment" > /dev/null; then
-
-  adduser --disabled-password --comment "" $admin_name
+ 
+  adduser --disabled-password --comment "" $admin_name > /dev/null;
 
 else
   adduser --disabled-password $admin_name
 fi
+echo
 chpasswd <<<"$admin_name:$admin_password"
 
 # Set privileges for the admin account.
 #
 echo "Set privileges for the admin account"
 usermod -aG sudo $admin_name
+echo
 sleep 1
 
 # Enabling SSH access for the admin user by copying roots ssh dir to the new admin user
 #
 echo "Enabling SSH access for the admin user"
 rsync --archive --chown="$admin_name:$admin_name" ~/.ssh "/home/$admin_name"
+echo
 sleep 1
 
 else 
@@ -64,10 +70,15 @@ fi
 if command -v ufw > /dev/null; then
 
   ufw default deny incoming
+  echo
   ufw default allow outgoing
+  echo
   ufw allow OpenSSH
-  yes | sudo ufw enable >/dev/null
+  echo
+  yes | sudo ufw enable
+  echo
   echo "Enabled ufw"
+  echo
   sleep 1
 
 elif ! [ "$(uname -s)" = "Darwin" ]; then
