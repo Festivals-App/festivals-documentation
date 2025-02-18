@@ -30,7 +30,7 @@ sleep 1
 # 🛠 Function: Create Admin User
 # ─────────────────────────────────────────────────────────────────────────────
 create_admin_user() {
-    echo -e "\n🆕  Creating admin account: \e[1;34m$admin_name\e[0m\n"
+    echo -e "\n🆕  Creating admin account: \e[1;34m$admin_name\e[0m"
     sleep 1
 
     if adduser --help | grep -q -- "--gecos"; then
@@ -47,7 +47,7 @@ create_admin_user() {
     usermod -aG sudo "$admin_name"
     sleep 1
 
-    echo -e "\n🔐  Enabling SSH access for \e[1;34m$admin_name\e[0m"
+    echo -e "\n🔐  Enabling SSH access for \e[1;34m$admin_name\e[0m\n"
     rsync --archive --chown="$admin_name:$admin_name" ~/.ssh "/home/$admin_name"
     sleep 1
 }
@@ -66,7 +66,7 @@ fi
 # 🔥 Enable and Configure Firewall
 # ─────────────────────────────────────────────────────────────────────────────
 if command -v ufw > /dev/null; then
-    echo -e "\n🚀  Configuring firewall (UFW)...\n"
+    echo -e "\n🚀  Configuring firewall (UFW)..."
     ufw default deny incoming
     ufw default allow outgoing
     ufw allow OpenSSH
