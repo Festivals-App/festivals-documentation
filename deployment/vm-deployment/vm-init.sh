@@ -1,88 +1,83 @@
 #!/bin/bash
 #
-# vm-init.sh
+# vm-init.sh - Server Initialization Script
 #
-# (c)2021-2025 Simon Gaus
+# (c) 2021-2025 Simon Gaus
 #
 
-# Check if all parameters are supplied
-#
+# ─────────────────────────────────────────────────────────────────
+# 🛑 Check if all parameters are supplied
+# ─────────────────────────────────────────────────────────────────
 if [ $# -ne 2 ]; then
-    echo "$0: usage: sudo ./vm-init.sh <admin_name> <admin_password>"
-    echo
+    echo -e "\n\033[1;31m🚨 ERROR: Missing parameters!\033[0m"
+    echo -e "\n\033[1;34m🔹 USAGE:\033[0m sudo ./vm-init.sh \033[1;32m<admin_name> <admin_password>\033[0m"
+    echo -e "\n\033[1;34m📌 EXAMPLE:\033[0m sudo ./vm-init.sh alice MySecurePass123"
+    echo -e "\n\033[1;34m⚠️  REQUIREMENTS:\033[0m Run as \033[1;33mroot\033[0m or with \033[1;33msudo\033[0m."
+    echo -e "\n\033[1;31m❌ Exiting.\033[0m\n"
     exit 1
 fi
 
-# Store password and name in variables
-#
+# ─────────────────────────────────────────────────────────────────────────────
+# 🎯 Store parameters in variables
+# ─────────────────────────────────────────────────────────────────────────────
 admin_name=$1
 admin_password=$2
-echo
-echo "Password and username are valid"
-echo
+
+echo -e "\n✅ Password and username are valid.\n"
 sleep 1
 
-# Check if user exists
-if ! id -u $admin_name > /dev/null 2>&1; then
+# ─────────────────────────────────────────────────────────────────────────────
+# 🛠 Function: Create Admin User
+# ─────────────────────────────────────────────────────────────────────────────
+create_admin_user() {
+    echo -e "\n🆕 Creating admin account: \e[1;34m$admin_name\e[0m\n"
+    sleep 1
 
-# Create the user that will be used for administrate this server.
-#
-echo "Creating the admin account '$admin_name'"
-echo
-sleep 1
-if adduser --help | grep -e "--gecos" > /dev/null; then
+    if adduser --help | grep -q -- "--gecos"; then
+        adduser --disabled-password --gecos "" "$admin_name" > /dev/null
+    elif adduser --help | grep -q -- "--comment"; then
+        adduser --disabled-password --comment "" "$admin_name" > /dev/null
+    else
+        adduser --disabled-password "$admin_name"
+    fi
 
-  adduser --disabled-password --gecos "" $admin_name > /dev/null;
+    chpasswd <<<"$admin_name:$admin_password"
 
-elif adduser --help | grep -e "--comment" > /dev/null; then
- 
-  adduser --disabled-password --comment "" $admin_name > /dev/null;
+    echo -e "\n🔑 Setting privileges for \e[1;34m$admin_name\e[0m"
+    usermod -aG sudo "$admin_name"
+    sleep 1
 
+    echo -e "\n🔐 Enabling SSH access for \e[1;34m$admin_name\e[0m"
+    rsync --archive --chown="$admin_name:$admin_name" ~/.ssh "/home/$admin_name"
+    sleep 1
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 👤 Check if user already exists
+# ─────────────────────────────────────────────────────────────────────────────
+if ! id -u "$admin_name" > /dev/null 2>&1; then
+    create_admin_user
 else
-  adduser --disabled-password $admin_name
-fi
-chpasswd <<<"$admin_name:$admin_password"
-
-# Set privileges for the admin account.
-#
-echo "Set privileges for the admin account"
-usermod -aG sudo $admin_name
-echo
-sleep 1
-
-# Enabling SSH access for the admin user by copying roots ssh dir to the new admin user
-#
-echo "Enabling SSH access for the admin user"
-rsync --archive --chown="$admin_name:$admin_name" ~/.ssh "/home/$admin_name"
-echo
-sleep 1
-
-else 
-
-echo "Admin account already exists. Continuing..."
-sleep 1
-
+    echo -e "\n⚠️ Admin account \e[1;34m$admin_name\e[0m already exists. Skipping user creation.\n"
+    sleep 1
 fi
 
-# Enables and configures the firewall.
-# This step is skipped under macOS.
-#
+# ─────────────────────────────────────────────────────────────────────────────
+# 🔥 Enable and Configure Firewall
+# ─────────────────────────────────────────────────────────────────────────────
 if command -v ufw > /dev/null; then
+    echo -e "\n🚀 Configuring firewall (UFW)...\n"
+    ufw default deny incoming
+    ufw default allow outgoing
+    ufw allow OpenSSH
+    yes | sudo ufw enable > /dev/null
 
-  ufw default deny incoming
-  echo
-  ufw default allow outgoing
-  echo
-  ufw allow OpenSSH
-  echo
-  yes | sudo ufw enable
-  echo
-  echo "Enabled ufw"
-  echo
-  sleep 1
-
+    echo -e "\n🟢 UFW Firewall Enabled & Configured!\n"
+    sleep 1
 elif ! [ "$(uname -s)" = "Darwin" ]; then
-  echo "No firewall detected and not on macOS. Exiting."
-  sleep 1
-  exit 1
+    echo -e "\n❌ No firewall detected and not on macOS. Exiting.\n"
+    sleep 1
+    exit 1
 fi
+
+echo -e "\n🎉 \e[1;32mServer initialization complete!\e[0m 🚀\n"
