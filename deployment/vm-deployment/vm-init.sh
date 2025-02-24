@@ -10,10 +10,10 @@
 # ─────────────────────────────────────────────────────────────────
 if [ $# -ne 2 ]; then
     echo -e "\n\033[1;31m🚨  ERROR: Missing parameters!\033[0m"
-    echo -e "\n\033[1;34m🔹  USAGE:\033[0m sudo ./vm-init.sh \033[1;32m<admin_name> <admin_password>\033[0m"
-    echo -e "\n\033[1;34m📌  EXAMPLE:\033[0m sudo ./vm-init.sh alice MySecurePass123"
-    echo -e "\n\033[1;34m⚠️  REQUIREMENTS:\033[0m Run as \033[1;33mroot\033[0m or with \033[1;33msudo\033[0m."
-    echo -e "\n\033[1;31m❌  Exiting.\033[0m\n"
+    echo -e "\033[1;34m🔹  USAGE:\033[0m sudo ./vm-init.sh \033[1;32m<admin_name> <admin_password>\033[0m"
+    echo -e "\033[1;34m📌  EXAMPLE:\033[0m sudo ./vm-init.sh alice MySecurePass123"
+    echo -e "\033[1;34m⚠️  REQUIREMENTS:\033[0m Run as \033[1;33mroot\033[0m or with \033[1;33msudo\033[0m."
+    echo -e "\033[1;31m❌  Exiting.\033[0m\n"
     exit 1
 fi
 
