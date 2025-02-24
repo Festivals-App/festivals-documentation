@@ -23,14 +23,14 @@ fi
 admin_name=$1
 admin_password=$2
 
-echo -e "\n✅  Password and username are valid.\n"
+echo -e "\n✅  Password and username are valid."
 sleep 1
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 🛠 Function: Create Admin User
 # ─────────────────────────────────────────────────────────────────────────────
 create_admin_user() {
-    echo -e "\n🆕  Creating admin account: \e[1;34m$admin_name\e[0m"
+    echo -e "🆕  Creating admin account: \e[1;34m$admin_name\e[0m"
     sleep 1
 
     if adduser --help | grep -q -- "--gecos"; then
@@ -43,11 +43,11 @@ create_admin_user() {
 
     chpasswd <<<"$admin_name:$admin_password"
 
-    echo -e "\n🔑  Setting privileges for \e[1;34m$admin_name\e[0m"
+    echo -e "🔑  Setting privileges for \e[1;34m$admin_name\e[0m"
     usermod -aG sudo "$admin_name"
     sleep 1
 
-    echo -e "\n🔐  Enabling SSH access for \e[1;34m$admin_name\e[0m\n"
+    echo -e "🔐  Enabling SSH access for \e[1;34m$admin_name\e[0m"
     rsync --archive --chown="$admin_name:$admin_name" ~/.ssh "/home/$admin_name"
     sleep 1
 }
@@ -58,7 +58,7 @@ create_admin_user() {
 if ! id -u "$admin_name" > /dev/null 2>&1; then
     create_admin_user
 else
-    echo -e "\n⚠️  Admin account \e[1;34m$admin_name\e[0m already exists. Skipping user creation.\n"
+    echo -e "⚠️  Admin account \e[1;34m$admin_name\e[0m already exists. Skipping user creation."
     sleep 1
 fi
 
@@ -66,13 +66,13 @@ fi
 # 🔥 Enable and Configure Firewall
 # ─────────────────────────────────────────────────────────────────────────────
 if command -v ufw > /dev/null; then
-    echo -e "\n🚀  Configuring firewall (UFW)..."
-    ufw default deny incoming
-    ufw default allow outgoing
-    ufw allow OpenSSH
+    echo -e "🔥  Configuring firewall (UFW)..."
+    ufw default deny incoming > /dev/null
+    ufw default allow outgoing > /dev/null
+    ufw allow OpenSSH > /dev/null
     yes | sudo ufw enable > /dev/null
 
-    echo -e "\n🟢  UFW Firewall Enabled & Configured!\n"
+    echo -e "🟢  UFW Firewall Enabled & Configured!"
     sleep 1
 elif ! [ "$(uname -s)" = "Darwin" ]; then
     echo -e "\n❌  No firewall detected and not on macOS. Exiting.\n"
@@ -80,4 +80,4 @@ elif ! [ "$(uname -s)" = "Darwin" ]; then
     exit 1
 fi
 
-echo -e "\n🎉  \e[1;32mServer initialization complete!\e[0m 🚀\n"
+echo -e "🎉  \e[1;32mServer initialization complete!\e[0m 🚀\n"
