@@ -7,9 +7,6 @@ In this guide, I will focus on two popular approaches: Proxmox (PVE), an open-so
 on your own hardware, and DigitalOcean (DO), a cloud-based service that simplifies VM deployment. While these are the main focus,
 other solutions like VMware ESXi, VirtualBox, and Microsoft Hyper-V are also widely used and worth mentioning.
 
-![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white)
-![Proxmox](https://img.shields.io/badge/proxmox-proxmox?style=for-the-badge&logo=proxmox&logoColor=%23E57000&labelColor=%232b2a33&color=%232b2a33)
-
 ## Initialise an Ubuntuu VM with Proxmox or DigitalOcean
 
 I use Ubuntu Server 24.04 LTS as the operating system for the virtual machine due to its stability, long-term support,
@@ -26,7 +23,7 @@ For DigitalOcean, I use **Droplets** for quick and easy deployment ([official gu
 Using SSH keys for authentication enhances security and simplifies access to virtual machines. 
 Both DigitalOcean and Proxmox support multiple methods for adding SSH keys.
 
-#### Proxmox ![Proxmox](https://img.shields.io/badge/proxmox-proxmox?style=for-the-badge&logo=proxmox&logoColor=%23E57000&labelColor=%232b2a33&color=%232b2a33)
+#### ![Proxmox](https://img.shields.io/badge/proxmox-proxmox?style=for-the-badge&logo=proxmox&logoColor=%23E57000&labelColor=%232b2a33&color=%232b2a33)
 
 1. Injecting SSH Keys into a Cloud-Init Template
    - When using cloud-init for automated deployments, specify SSH keys in the VM template settings under `Cloud-Init → SSH public key`.
@@ -34,7 +31,7 @@ Both DigitalOcean and Proxmox support multiple methods for adding SSH keys.
 2. Manually Adding an SSH Key
    - Append your public key to the `~/.ssh/authorized_keys` file.
 
-#### DigitalOcean
+#### ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white)
 
 1. Adding SSH Keys via the Web Interface
    - When creating a new droplet, you can add an SSH key directly in the "Authentication" section.
