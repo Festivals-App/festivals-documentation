@@ -52,11 +52,11 @@ sudo cat /var/log/mail.log                  // sendmail log
 
 ### DigitalOcean Ressources
 
-**Access Guide**: <https://digitalocean.com/community/tutorials/how-to-set-up-an-ubuntu-20-04-server-on-a-digitalocean-droplet>
-**Initial Setup Guide**: <https://digitalocean.com/docs/droplets/tutorials/recommended-setup/>
-**Setup Server&SSH:** <https://digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04>
-**Setup MYSQL:** <https://digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04>
-**Setup Remote DB access:** <https://digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-18-04>
- **Setup Systemd Unit File (service)** <https://digitalocean.com/community/tutorials/how-to-deploy-a-go-web-application-using-nginx-on-ubuntu-18-04>
+- Access Guide: <https://digitalocean.com/community/tutorials/how-to-set-up-an-ubuntu-20-04-server-on-a-digitalocean-droplet>
+- Initial Setup Guide: <https://digitalocean.com/docs/droplets/tutorials/recommended-setup/>
+- Setup Server&SSH: <https://digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04>
+- Setup MYSQL: <https://digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04>
+- Setup Remote DB access: <https://digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-18-04>
+- Setup Systemd Unit File (service): <https://digitalocean.com/community/tutorials/how-to-deploy-a-go-web-application-using-nginx-on-ubuntu-18-04>
 
 ## Notes
