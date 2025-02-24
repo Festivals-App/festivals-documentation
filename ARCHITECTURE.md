@@ -31,12 +31,12 @@ which are necessary to operate the backend services fot the FestivalsApp. The do
 ## Big Picture
 
 The Festival App is designed to provide a comprehensive solution for managing and interacting with multiple festivals, offering users seamless access to event information,
-schedules, venues, and activities across various festivals. The architecture is modular and scalable, supporting unique configurations for each festival 
+schedules, locations, and activities across various festivals. The architecture is modular and scalable, supporting unique configurations for each festival
 while maintaining a consistent user experience.
 
 ![Figure 1: Architecture Overview](https://github.com/Festivals-App/festivals-documentation/blob/main/images/architecture/overview.png "Figure 1: Architecture Overview")
 
-At the core of the architecture is a backend server responsible for managing festival data, connected to a database that stores information about festivals, events, and venues.
+At the core of the architecture is a backend server responsible for managing festival data, connected to a database that stores information about festivals, events, and locations.
 In addition, a separate file server handles media assets (such as images, videos, and documents) associated with the festivals, ensuring efficient storage and retrieval of large files
 without burdening the main server. The app is also designed with security and performance in mind, utilizing load balancing, service discovery, and encrypted data transmission
 to handle the increasing number of festivals.
@@ -62,10 +62,10 @@ Following the high level architecture overview, shown in Figure 1: Architecture 
 * Mobile App (not in scope for the backend infrastructure)
 * Creator Tool (not in scope for the backend infrastructure)
 * Gateway
-* Identity Server
 * FestivalsApp Server
 * Database
 * File Server
+* Identity Server
 
 Along with the application-level components, the following system and technology-specific elements should also be taken into account:
 
@@ -93,10 +93,10 @@ and other related services. These tasks include:
    * Offer functionality to create, update, and delete festival and event data (CRUD operations), including administrative tools for managing this data.
 
 3. Validate Authentication Tokens and enforce Authorization:
-   * Verify the authentication tokens (e.g., API keys, JWT) issued by the Identity Server to ensure users are properly authenticated.
+   * Verify the authentication tokens (e.g., API keys, JWT) issued by the Identity Server to ensure requests are properly authenticated.
    * Implement token validation mechanisms to ensure only authenticated users can access protected resources.
    * Use the information provided by the Identity Server (such as user roles and permissions) to enforce role-based access control (RBAC).
-   * Ensure that users can only access or modify data according to their assigned roles (e.g., admins vs. regular users).
+   * Ensure that users can only access or modify data according to their assigned roles (e.g., admins vs. regular users vs. services).
 
 4. Connect to the Festivals Database:
    * Retrieve and store festival and event data in the database.
@@ -109,7 +109,7 @@ and other related services. These tasks include:
    * Provide meaningful error responses to the clients (e.g., if data is missing or there's a server issue).
 
 6. Security and Data Protection:
-   * Use secure communication protocols (e.g., HTTPS, SSL/TLS) to protect data.
+   * Use secure communication protocols (e.g., HTTPS, SSL/mTLS) to protect data.
    * Collaborate with the Identity Server for authentication and authorization security, focusing on data access protection.
 
 7. Provide API Documentation and Versioning:
@@ -146,14 +146,18 @@ and other related services. These tasks include:
 
 
 Graphics:
-Architecture Overview
+Architecture Overview X
 
-Use case App User
-Use case Festival Creator
-Use case Administrator
+Use case visitor X
+Use case Festival Creator X
+Use case Administrator X
+
+Verification flow for data retrieval
+Verification flow for data editing
+Verification flow for heartbeat
 
 Roles
-
+  
 Interaction flow for data retrieval
 Interaction flow for data creation
 
