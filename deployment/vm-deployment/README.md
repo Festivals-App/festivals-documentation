@@ -88,6 +88,6 @@ ssh -o PubkeyAuthentication=no -o PreferredAuthentications=password <username>@<
 
 ## Resources
 
-SSH keys DO guide: <https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04>
-Security best practices (german): <https://blog.buettner.xyz/sichere-ssh-konfiguration/>
-Security best practices by ssh.com: <https://www.ssh.com/academy/ssh/sshd_config>
+- SSH keys DO guide: <https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04>
+- Security best practices (german): <https://blog.buettner.xyz/sichere-ssh-konfiguration/>
+- Security best practices by ssh.com: <https://www.ssh.com/academy/ssh/sshd_config>
