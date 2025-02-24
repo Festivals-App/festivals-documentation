@@ -10,7 +10,7 @@ other solutions like VMware ESXi, VirtualBox, and Microsoft Hyper-V are also wid
 ## Initialise an Ubuntuu VM with Proxmox or DigitalOcean
 
 I use Ubuntu Server 24.04 LTS as the operating system for the virtual machine due to its stability, long-term support,
-and broad compatibility. While other Linux distributions like Debian, CentOS, AlmaLinux, or Arch Linux can also be used.
+and broad compatibility. While other Linux distributions like Debian, CentOS, AlmaLinux, or Arch Linux may also be used.
 
 **It's important to note that the FestivalsApp backend and scripts have not been tested on distributions other than Ubuntu.**
 Using a different distribution may require adjustments or troubleshooting to ensure compatibility.
