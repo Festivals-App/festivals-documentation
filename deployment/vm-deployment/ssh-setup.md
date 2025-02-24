@@ -1,20 +1,27 @@
-# General VM Setup: SSH Access
+# General SSH Setup
 
-With DigitalOcean (and other hosters) you are able to add you ssh key to the newly created vm 
-and you are pretty much ready to ssh into the server securely without using password authentication 
-for environments without that feature you can do that manually.
+This document is a collection of tips and snippets that i find helpful when i setup and manage SSH access to my VMs in development and production.
 
-### SSH key pair creation
+I use different SSH keys for different tasks, for development it is okay to use one key pair for all development server, see
+[best-practice](https://security.stackexchange.com/questions/40050/best-practice-separate-ssh-key-per-host-and-user-vs-one-ssh-key-for-all-hos)
+discussion on stackexchange so i use one SSH key for the Proxmox host, one SSH key for all my Proxmox VMs but i use one SSH key for each production server and user.
+
+## SSH key pair creation
 
 Generate a SSH key pair on client machine:
 `ssh-keygen -t rsa`
 
-- SSH key name scheme: `id_rsa_<projectname>_<vm-name>`
+- SSH key name scheme: `id_rsa_<projectname>_<node-name>`
 - Password length: `25 Characters`
+    Generating a password via the terminal: `openssl rand -base64 35 | tr -d "=+/" | cut -c1-25`
 
-### Usage
+Copy public key to server you want to login remotely:
+`ssh-copy-id -i ~/.ssh/<key.pub> <username>@<IP address or hostname>`
 
-Add or edit a simple `config` text file in `~/.ssh`:
+## Usage tips on macOS
+
+Add or edit a simple `config` text file in `~/.ssh` to use the right key for a given host:
+
 ```bash
 Host *
   AddKeysToAgent yes
@@ -24,41 +31,4 @@ Host <IP address or hostname>
   IdentityFile ~/.ssh/<id_rsa_....>
 ```
 
-Copy public key to server:
-`ssh-copy-id -i ~/.ssh/<key.pub> <username>@<IP address or hostname>`
-
-Login with:
- `ssh <username>@<IP address or hostname>`
-
-For development it is okay to use one key pair for all development server, see 
-[best-practice](https://security.stackexchange.com/questions/40050/best-practice-separate-ssh-key-per-host-and-user-vs-one-ssh-key-for-all-hos) 
-discussion on stackexchange.
-
-## Securing the server
-
-After making sure you can login via public key disable password authentication on the server by editing the `sshd_config`:
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-and change the necessary values:
-
-`PermitRootLogin yes` to `PermitRootLogin prohibit-password`
-
-`StrictModes no` to `StrictModes yes`
-
-`PubkeyAuthentication no` to `PubkeyAuthentication yes`
-
-`HostbasedAuthentication yes` to `HostbasedAuthentication no`
-
-`PasswordAuthentication yes` to `PasswordAuthentication no`
-
-`PermitEmptyPasswords yes` to `PermitEmptyPasswords no`
-
-`ChallengeResponseAuthentication yes` to `ChallengeResponseAuthentication no`
-
-### Digital Ocean Setup
-
-Following this guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
-
-Security best practices (german): https://blog.buettner.xyz/sichere-ssh-konfiguration/
+Now you can login with `ssh <username>@<IP address or hostname>` rather than using `ssh -i <private key filename> <username>@<IP address or hostname>`
