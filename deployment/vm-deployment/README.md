@@ -32,7 +32,7 @@ Both DigitalOcean and Proxmox support multiple methods for adding SSH keys.
    - On your client machine, create the SSH key pair you want to use to login
      on your server with `ssh-keygen -t rsa` using a strong 25 character password.
    - Append the public key to the `~/.ssh/authorized_keys` file on your server
-     using `ssh-copy-id -i ~/.ssh/id_rsa_new_key user@host`
+     using `ssh-copy-id -i ~/.ssh/id_rsa_new_key.pub user@host`
 
 #### ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white)
 
